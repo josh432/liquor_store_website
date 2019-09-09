@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bend South Liquor</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/7acdbbb9f2.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      nav.nav-center ul {
+        text-align: center;
+      }
+      nav.nav-center ul li {
+        display: inline;
+        float: none;
+      }
+      nav.nav-center ul li a {
+        display: inline-block;
+        color: #722;
+        font-family: "Amatic SC", cursive;
+        font-size: 2em;
+        font-weight: bold;
+      }
+      i {
+        color: #722;
+      }
+
+      ul.side-nav li a {
+        color: #722;
+        font-family: "Amatic SC", cursive;
+        font-size: 2em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Begin Navbar -->
+
+    <img src="./img/logo.jpg" id="logo" />
+
+    <div class="navbar">
+      <nav class="nav-center">
+        <div class="nav-wrapper white">
+          <div class="container">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul id="nav-mobile" class="center hide-on-med-and-down">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#skills">Bottle Shop</a></li>
+              <li><a href="#resume">Tasting Bar</a></li>
+              <li><a href="#portfolio">The Buzz</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#skills">Bottle Shop</a></li>
+      <li><a href="#resume">Tasting Bar</a></li>
+      <li><a href="#portfolio">The Buzz</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <br /><br />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".slider").slider();
+        $(".button-collapse").sideNav({ closeOnClick: true });
+        $(".scrollspy").scrollSpy({ scrollOffset: 0 });
+      });
+
+      // Pause slider
+      $(".slider").slider("pause");
+      // Start slider
+      $(".slider").slider("start");
+      // Next slide
+      $(".slider").slider("next");
+      // Previous slide
+      $(".slider").slider("prev");
+    </script>
+  </body>
+</html>
