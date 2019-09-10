@@ -68,6 +68,19 @@
       .view {
         color: white;
       }
+
+      .card {
+        font-family: "Amatic SC", cursive;
+        font-weight: bold;
+        color: #722;
+        font-size: 2em;
+      }
+
+      .card
+        .card-action
+        a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+        color: #722;
+      }
     </style>
   </head>
   <body>
@@ -108,55 +121,102 @@
     <br /><br />
 
     <!-- Begin Slideshow -->
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="./img/bend1.jpg" />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3 class="view">
-              Bend South Liquor
-            </h3>
-            <h5 class="view">
-              The source for libations and accessories in Bend, OR.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="./img/cocktail1.jpg" />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3>Ready, Set, Sip!</h3>
-            <h5>
-              Carrying a curated selection of Beer, Wine, Liquor & Ciders
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="./img/bend2.jpg" />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3 class="view">A Toast!</h3>
-            <h5 class="view">
-              To all our new friends, thanks for stopping by!
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img src="./img/cocktail2.jpg" />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3 class="view">New Space, Same Spirit</h3>
-            <h5 class="view">
-              More sipping options, more snacks, more mixers, more merchandise,
-              same love!
-            </h5>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- Begin Events -->
+    <div class="container">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="./img/bend1.jpg" />
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3 class="view">
+                Bend South Liquor
+              </h3>
+              <h5 class="view">
+                The source for libations and accessories in Bend, OR.
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="./img/cocktail1.jpg" />
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3>Ready, Set, Sip!</h3>
+              <h5>
+                Carrying a curated selection of Beer, Wine, Liquor & Ciders
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="./img/bend2.jpg" />
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3 class="view">A Toast!</h3>
+              <h5 class="view">
+                To all our new friends, thanks for stopping by!
+              </h5>
+            </div>
+          </li>
+          <li>
+            <img src="./img/cocktail2.jpg" />
+            <!-- random image -->
+            <div class="caption left-align">
+              <h3 class="view">New Space, Same Spirit</h3>
+              <h5 class="view">
+                More sipping options, more snacks, more mixers, more
+                merchandise, same love!
+              </h5>
+            </div>
+          </li>
+        </ul>
+      </div>
 
+      <!-- Begin Events -->
+      <h3 class="center-align">Events</h3>
+      <div class="card-holder">
+        <div class="row">
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/mixer.jpg" />
+                <span class="card-title">Mary's Mixers Sipping Session</span>
+              </div>
+              <div class="card-content">
+                <p>
+                  Stop by the store this Sunday starting at 3pm for Mary's
+                  Mixers tasting. Available in regular and CBD. This makes a
+                  mean whiskey sour!
+                </p>
+              </div>
+              <div class="card-action">
+                <a target="_blank" href="https://marysmixers.com/"
+                  >Mary's Mixers Homepage</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img id="resize" src="./img/beer.jpg" />
+                <span class="card-title">Monkless Belgian Ale Tasting</span>
+              </div>
+              <div class="card-content">
+                <p>
+                  Now Carrying Monkless Belgian Ale! This delicious beverage
+                  brewed in the tradition of Belgian Monks will be available for
+                  tasting on Tuesday at 3pm! Bring a friend!
+                </p>
+              </div>
+              <div class="card-action">
+                <a target="_blank" href="https://www.monkless.com/"
+                  >Monkless Homepage</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
