@@ -57,6 +57,10 @@
         font-weight: bold;
       }
 
+      .large {
+        font-size: 3em;
+      }
+
       h3,
       h5 {
         font-family: "Amatic SC", cursive;
@@ -125,7 +129,18 @@
         background-repeat: repeat-y;
         background-position: center;
         background-size: cover;
-        height: 100%;
+      }
+
+      .outdoors {
+        background: url("./img/vodka.jpg");
+        background-repeat: repeat-y;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .hashtag {
+        font-size: 5em;
+        color: white;
       }
     </style>
   </head>
@@ -175,7 +190,7 @@
             <!-- random image -->
             <div class="caption left-align">
               <h3 class="view">
-                Bend South Liquor
+                <span class="large">Bend South Liquor</span>
               </h3>
               <h5 class="view">
                 61153 South Hwy 97 Bend, OR 97702<br />
@@ -188,7 +203,7 @@
             <img src="./img/cocktail1.jpg" />
             <!-- random image -->
             <div class="caption left-align">
-              <h3>Ready, Set, Sip!</h3>
+              <span class="large"><h3>Ready, Set, Sip!</h3></span>
               <h5>
                 Carrying a curated selection of Spirits, Mixers, Wines, Gifts &
                 Northwest Brews.
@@ -199,7 +214,7 @@
             <img src="./img/bend2.jpg" />
             <!-- random image -->
             <div class="caption left-align">
-              <h3 class="view">A Toast!</h3>
+              <h3 class="view"><span class="large">A Toast!</h3></span>
               <h5 class="view">
                 To all our new friends, thanks for stopping by!
               </h5>
@@ -209,7 +224,7 @@
             <img src="./img/cocktail2.jpg" />
             <!-- random image -->
             <div class="caption left-align">
-              <h3 class="view">New Space, Same Spirit</h3>
+              <h3 class="view"><span class="large">New Space, Same Spirit</h3></span>
               <h5 class="view">
                 More sipping options, more mixers, more merchandise, same love!
               </h5>
@@ -288,8 +303,6 @@
           <h3 class="center-align padme1">Gifts and Merchandise</h3>
         </div>
       </div>
-
-      <br /><br />
     </div>
 
     <!-- Begin contact info and map -->
@@ -317,12 +330,12 @@
         </div>
       </div>
     </div>
-    <br />
-    <br />
 
     <!-- Begin Hashtag display area for store-->
     <div class="container">
-      <h3 class="center-align">#BENDSOUTHLIQUOR</h3>
+      <div class="outdoors">
+      <h3 class="padme1 view hashtag center-align">#BENDSOUTHLIQUOR</h3>
+    </div>
     </div>
     <!-- Begin Newsletter contact form-->
     <!-- Begin footer with contact and social icons-->
@@ -332,19 +345,18 @@
     <script>
       $(document).ready(function() {
         $(".slider").slider();
+        // Pause slider
+        $(".slider").slider("pause");
+        // Start slider
+        $(".slider").slider("start");
+        // Next slide
+        $(".slider").slider("next");
+        // Previous slide
+        $(".slider").slider("prev");
         $(".button-collapse").sideNav({ closeOnClick: true });
         $(".scrollspy").scrollSpy({ scrollOffset: 0 });
         $(".materialboxed").materialbox();
       });
-
-      // Pause slider
-      $(".slider").slider("pause");
-      // Start slider
-      $(".slider").slider("start");
-      // Next slide
-      $(".slider").slider("next");
-      // Previous slide
-      $(".slider").slider("prev");
     </script>
   </body>
 </html>
