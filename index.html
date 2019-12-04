@@ -106,7 +106,7 @@
       #overlay {
         background-color: rgba(119, 34, 34, 0.5);
         margin: 0 0 10px 10px;
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
 
       #map {
@@ -181,8 +181,6 @@
 
     <img src="./img/logo.jpg" class="logo" />
 
-    <!-- Begin Desktop Navbar -->
-
     <div class="navbar">
       <nav class="nav-center z-depth-0">
         <div class="nav-wrapper white">
@@ -191,13 +189,9 @@
               ><i class="material-icons">menu</i></a
             >
             <ul id="nav-mobile" class="center hide-on-med-and-down">
-              <li>
-                <a href="index.html"><i class="material-icons">home</i></a>
-              </li>
               <li><a href="#about">About Us</a></li>
               <li><a href="bottleshop.html">Bottle Shop</a></li>
               <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="#thebuzz">The Buzz</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
@@ -205,16 +199,11 @@
       </nav>
     </div>
 
-    <!-- Begin Mobile Navbar -->
-
     <ul class="side-nav" id="mobile-demo">
-      <li>
-        <a href="index.html"><i class="large material-icons">home</i></a>
-      </li>
       <li><a href="#about">About Us</a></li>
       <li><a href="bottleshop.html">Bottle Shop</a></li>
+
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="#thebuzz">The Buzz</a></li>
       <li><a href="#contact">Contact Us</a></li>
     </ul>
     <br /><br />
@@ -456,7 +445,9 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
-      $(document).ready(function() {});
+      $(document).ready(function() {
+        $(".button-collapse").sideNav({ closeOnClick: true });
+      });
     </script>
 
     <script>
